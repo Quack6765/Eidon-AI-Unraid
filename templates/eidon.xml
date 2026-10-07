@@ -9,7 +9,7 @@
   <Support>https://github.com/Quack6765/Eidon-AI/issues</Support>
   <Project>https://github.com/Quack6765/Eidon-AI</Project>
   <ReadMe>https://github.com/Quack6765/Eidon-AI#readme</ReadMe>
-  <Overview>All the big AI features, none of the lock-in. Eidon is an all-in-one agent platform that runs as a single Docker container on your server and works with your own key from any provider. It comes with all the bells and whistles already baked in, with your chats and agents synced live between all of your devices.</Overview>
+  <Overview>All the big AI features, none of the lock-in. Eidon is an all-in-one agent platform that runs as a single Docker container on your server and works with your own key from any provider. It comes with all the bells and whistles already baked in for your chat and agents while syncing everything live between all of your devices.</Overview>
   <Requires>Before installing, generate the session and encryption secrets in the Unraid terminal with: openssl rand -hex 32 (run it twice, one value per field). Keep a copy of the encryption secret: restoring a backup needs the same value.</Requires>
   <Category>AI: Productivity:</Category>
   <ExtraSearchTerms>ai assistant agent agents chat llm chatgpt openai anthropic claude ollama openrouter</ExtraSearchTerms>
