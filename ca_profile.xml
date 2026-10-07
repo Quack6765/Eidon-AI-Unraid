@@ -1,0 +1,9 @@
+<CommunityApplications>
+  <Profile>
+Unraid template for **Eidon**, a self-hosted AI platform with a team of agents, and a chat for everything else. Bring your own model keys; your data stays on your server.
+
+This repository only holds the Unraid template. The app, its documentation and its issue tracker live at [github.com/Quack6765/Eidon-AI](https://github.com/Quack6765/Eidon-AI). Please report problems there.
+  </Profile>
+  <Icon>https://raw.githubusercontent.com/Quack6765/Eidon-AI-Unraid/main/icon.png</Icon>
+  <WebPage>https://eidonai.app</WebPage>
+</CommunityApplications>

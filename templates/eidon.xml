@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Eidon</Name>
+  <Repository>ghcr.io/quack6765/eidon-ai:latest</Repository>
+  <Registry>https://github.com/Quack6765/Eidon-AI/pkgs/container/eidon-ai</Registry>
+  <Network>bridge</Network>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/Quack6765/Eidon-AI/issues</Support>
+  <Project>https://github.com/Quack6765/Eidon-AI</Project>
+  <ReadMe>https://github.com/Quack6765/Eidon-AI#readme</ReadMe>
+  <Overview>Eidon is a self-hosted AI platform with a team of agents, and a chat for everything else. Agents browse the web in a real browser, run automations on a schedule, and write cited deep-research reports. Bring your own model keys: OpenAI, Anthropic, OpenRouter, Ollama, LM Studio, GitHub Copilot and many more. Several users can share one install, each with private data. Everything lives in your appdata folder, and provider keys are stored encrypted.</Overview>
+  <Requires>Before installing, generate the session and encryption secrets in the Unraid terminal with: openssl rand -hex 32 (run it twice, one value per field). Keep a copy of the encryption secret: restoring a backup needs the same value.</Requires>
+  <Category>AI: Productivity:</Category>
+  <ExtraSearchTerms>ai assistant agent agents chat llm chatgpt openai anthropic claude ollama openrouter</ExtraSearchTerms>
+  <WebUI>http://[IP]:[PORT:3000]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/Quack6765/Eidon-AI-Unraid/main/templates/eidon.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/Quack6765/Eidon-AI-Unraid/main/icon.png</Icon>
+  <ExtraParams>--shm-size=1g</ExtraParams>
+  <License>AGPL-3.0</License>
+  <Screenshot>https://raw.githubusercontent.com/Quack6765/Eidon-AI/main/.github/readme/desktop-agents.png</Screenshot>
+  <Screenshot>https://raw.githubusercontent.com/Quack6765/Eidon-AI/main/.github/readme/desktop-agent-browser.png</Screenshot>
+  <Screenshot>https://raw.githubusercontent.com/Quack6765/Eidon-AI/main/.github/readme/desktop-chat.png</Screenshot>
+  <Screenshot>https://raw.githubusercontent.com/Quack6765/Eidon-AI/main/.github/readme/mobile-chat.png</Screenshot>
+  <Config Name="WebUI Port" Target="3000" Default="3000" Mode="tcp" Description="Port for the web interface." Type="Port" Display="always" Required="true" Mask="false">3000</Config>
+  <Config Name="Data" Target="/app/data" Default="/mnt/user/appdata/eidon" Mode="rw" Description="Your database, attachments, browser profiles and downloaded models. Back up this folder." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/eidon</Config>
+  <Config Name="Base URL" Target="EIDON_BASE_URL" Default="" Mode="" Description="The address you open Eidon at, for example http://192.168.1.10:3000 or https://eidon.example.com. Used for share links and sign-in redirects." Type="Variable" Display="always" Required="true" Mask="false"></Config>
+  <Config Name="Admin username" Target="EIDON_ADMIN_USERNAME" Default="admin" Mode="" Description="Username of the first administrator account." Type="Variable" Display="always" Required="true" Mask="false">admin</Config>
+  <Config Name="Admin password" Target="EIDON_ADMIN_PASSWORD" Default="" Mode="" Description="Password of the first administrator account. At least 8 characters." Type="Variable" Display="always" Required="true" Mask="true"></Config>
+  <Config Name="Session secret" Target="EIDON_SESSION_SECRET" Default="" Mode="" Description="Signs sign-in sessions. At least 32 characters: openssl rand -hex 32" Type="Variable" Display="always" Required="true" Mask="true"></Config>
+  <Config Name="Encryption secret" Target="EIDON_ENCRYPTION_SECRET" Default="" Mode="" Description="Encrypts stored provider keys. At least 32 characters: openssl rand -hex 32. Keep a copy: restoring a backup needs the same value." Type="Variable" Display="always" Required="true" Mask="true"></Config>
+</Container>
