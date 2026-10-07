@@ -6,9 +6,9 @@
   <a href="https://eidonai.app"><b>eidonai.app</b></a>
 
   <p>
-    The Unraid Community Applications template for
     <a href="https://github.com/Quack6765/Eidon-AI"><b>Eidon</b></a>,
-    a self-hosted AI platform with a team of agents, and a chat for everything else.
+    a self-hosted AI platform with a team of agents, and a chat for everything else,
+    is available in Unraid Community Applications.
   </p>
 </div>
 
@@ -29,17 +29,6 @@
    and start chatting.
 
 Your data lives in `/mnt/user/appdata/eidon`. Back up that folder to back up Eidon.
-
-### Install the template by hand
-
-To use the template before it appears in the Apps tab, run this in the Unraid terminal:
-
-```bash
-wget -O /boot/config/plugins/dockerMan/templates-user/my-Eidon.xml \
-  https://raw.githubusercontent.com/Quack6765/Eidon-AI-Unraid/main/templates/eidon.xml
-```
-
-Then go to **Docker → Add Container** and pick **Eidon** from the **Template** list.
 
 ## Support
 
