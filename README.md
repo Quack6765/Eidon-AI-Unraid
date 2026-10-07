@@ -3,6 +3,8 @@
 
   <h1>Eidon for Unraid</h1>
 
+  <a href="https://eidonai.app"><b>eidonai.app</b></a>
+
   <p>
     The Unraid Community Applications template for
     <a href="https://github.com/Quack6765/Eidon-AI"><b>Eidon</b></a>,
