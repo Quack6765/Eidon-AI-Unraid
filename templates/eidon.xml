@@ -29,4 +29,6 @@
   <Config Name="Admin password" Target="EIDON_ADMIN_PASSWORD" Default="" Mode="" Description="Password of the first administrator account. At least 8 characters." Type="Variable" Display="always" Required="true" Mask="true"></Config>
   <Config Name="Session secret" Target="EIDON_SESSION_SECRET" Default="" Mode="" Description="Signs sign-in sessions. At least 32 characters: openssl rand -hex 32" Type="Variable" Display="always" Required="true" Mask="true"></Config>
   <Config Name="Encryption secret" Target="EIDON_ENCRYPTION_SECRET" Default="" Mode="" Description="Encrypts stored provider keys. At least 32 characters: openssl rand -hex 32. Keep a copy: restoring a backup needs the same value." Type="Variable" Display="always" Required="true" Mask="true"></Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="User ID Eidon runs as and owns the Data folder with. 99 is Unraid's nobody user. Set together with PGID." Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Group ID Eidon runs as and owns the Data folder with. 100 is Unraid's users group. Set together with PUID." Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
 </Container>
