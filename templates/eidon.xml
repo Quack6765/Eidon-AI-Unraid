@@ -16,7 +16,7 @@
   <WebUI>http://[IP]:[PORT:3000]/</WebUI>
   <TemplateURL>https://raw.githubusercontent.com/Quack6765/Eidon-AI-Unraid/main/templates/eidon.xml</TemplateURL>
   <Icon>https://raw.githubusercontent.com/Quack6765/Eidon-AI-Unraid/main/icon.png</Icon>
-  <ExtraParams>--shm-size=1g</ExtraParams>
+  <ExtraParams>--shm-size=1g --security-opt seccomp=unconfined --security-opt systempaths=unconfined</ExtraParams>
   <License>AGPL-3.0</License>
   <Screenshot>https://raw.githubusercontent.com/Quack6765/Eidon-AI/main/.github/readme/desktop-agents.png</Screenshot>
   <Screenshot>https://raw.githubusercontent.com/Quack6765/Eidon-AI/main/.github/readme/desktop-agent-browser.png</Screenshot>
